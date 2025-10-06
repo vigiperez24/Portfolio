@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Default: Dark Mode */
+:root {
+  /* Background Color */
+  --bg-primary: #151515;
+  --bg-secondary: #1d1d1d;
+  --bg-hover: #1b1b1b;
+  /* Card Color */
+  --bg-card: #1b1b1b;
+  /* Button Color */
+  --btn-color: #ffffff;
+  /* Font Color */
+  --font-primary: #ffffff;
+  --font-secondary: #d1d5db;
+  --font-description: #646464;
+  /* Font in Button */
+  --font-button: #ffffff;
+  /* Border Color */
+  --border-color: #4e4e4e;
+  --font-button: #ffffff;
+
+  --font-button: #000000;
+  --bg-button: #ffffff;
+}
+/* Light Mode */
+[data-theme="light"] {
+  /* Background Color */
+  --bg-primary: #ffffff;
+  --bg-secondary: #ececec;
+  --bg-hover: #ebebeb;
+  /* Card Color */
+  --bg-card: #ffffff;
+  /* Button Color */
+  --btn-color: #1b1b1b;
+  /* Font Color  */
+  --font-primary: #1b1b1b;
+  --font-secondary: #3a3a3c;
+  --font-description: #575757;
+  /* Font in Button */
+
+  /* Border Color */
+  --border-color: #c7c7c7;
+  --font-button: #ffffff;
+  --bg-button: #000000;
+}
+
+/* Transition */
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Rsponsive fonts */
+.responsive-text {
+  font-size: clamp(0.95rem, 1vw, 2rem);
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

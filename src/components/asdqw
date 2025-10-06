@@ -1,0 +1,221 @@
+import React from "react";
+import weather from "../assets/project_img/weather-app.PNG";
+import burger from "../assets/project_img/burger.PNG";
+import webGuard from "../assets/project_img/web-guard.PNG";
+
+function Project() {
+  const GithubIcon = () => (
+    <svg
+      className="h-6 w-6 text-[--font-button]"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        fillRule="evenodd"
+        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.624-5.475 5.92.43.37.823 1.102.823 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+  return (
+    <div className="w-full min-h-screen md:h-screen bg-[var(--bg-secondary)] flex justify-center items-center">
+      <div className="max-w-screen-xl mx-auto py-11 px-5 space-y-5 ">
+        {/* Title */}
+        <div className="text-center space-y-3">
+          <h1 className="text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl">
+            Featured Projects
+          </h1>
+          <p className="responsive-text  text-[var(--font-secondary)] tracking-tight">
+            These are some of the projects I’ve completed, showcasing my skills
+            in various technologies and my ability to solve different problems
+          </p>
+        </div>
+        {/* Container */}
+
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5  ">
+          {/* Card Container */}
+          <div className="p-5 flex flex-col gap-4 border-1 border-[var(--border-color)] rounded-md  bg-[var(--bg-primary)]">
+            {/* image */}
+            <div>
+              <img className=" w-full " src={weather} alt="weather-page" />
+            </div>
+
+            <div className="space-y-4">
+              {/* Title and Description */}
+              <div className="space-y-2">
+                <h1 className="text-[var(--font-primary)] text-xl font-bold md:text-2xl">
+                  Clouds - Real Time Weather App
+                </h1>
+                <p className="text-[var(--font-secondary)]">
+                  This is a fully responsive and visually polished weather
+                  application designed to deliver accurate, real-time weather
+                  information for any location worldwide. Built using React,
+                  Tailwind CSS, and other modern tools, the app integrates with
+                  WeatherAPI.com to fetch dynamic weather data and present it in
+                  a clean, user-friendly interface.
+                </p>
+                {/* TechStack */}
+                <div className="font-bold text-[var(--font-primary)] flex flex-wrap gap-3 ">
+                  <p>Tailwind</p>
+                  <p>React</p>
+                  <p>Node</p>
+                  <p>Express JS</p>
+                  <p>API</p>
+                </div>
+              </div>
+
+              {/* button */}
+              <div className="flex flex-row gap-2 text-[var(--font-button)] ">
+                {/* Code Button */}
+                <a
+                  href="https://github.com/vigiperez24"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center bg-[var(--bg-button)] py-1 px-2 rounded-md"
+                >
+                  <GithubIcon className="text-[--font-button]" />
+                  <span>Code</span>
+                </a>
+
+                {/* Visit Button */}
+                <a
+                  href="https://clouds-weather-ten.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center bg-[var(--bg-button)] py-1 px-2 rounded-md"
+                >
+                  <span>Visit</span>
+                  <span className="material-symbols-outlined rounded-md">
+                    link
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Card Container */}
+          <div className="p-5 flex flex-col gap-4 border-1 border-[var(--border-color)] rounded-md  bg-[var(--bg-primary)]">
+            {/* image */}
+            <div>
+              <img className=" w-full" src={burger} alt="weather-page" />
+            </div>
+
+            <div className="space-y-4 flex   flex-col">
+              {/* Title and Description */}
+              <div className="space-y-2">
+                <h1 className="text-[var(--font-primary)] text-xl font-bold md:text-2xl">
+                  The Best Foods
+                </h1>
+                <p className="text-[var(--font-secondary)]">
+                  Best Eats is a vibrant and user-friendly food delivery website
+                  that highlights top-rated menu items, promotional offers, and
+                  new restaurant listings through a clean layout, intuitive
+                  filters, and engaging visuals designed to enhance customer
+                  experience and drive orders.
+                </p>
+                {/* TechStack */}
+                <div className="font-bold text-[var(--font-primary)] flex flex-wrap  gap-3 ">
+                  <p>Tailwind</p>
+                  <p>React</p>
+                  <p>Node</p>
+                  <p>Express JS</p>
+                  <p>API</p>
+                </div>
+              </div>
+
+              {/* button */}
+              <div className="flex flex-row gap-2 text-[var(--font-button)] ">
+                {/* Code Button */}
+                <a
+                  href="https://github.com/vigiperez24"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center bg-[var(--bg-button)] py-1 px-2 rounded-md"
+                >
+                  <GithubIcon className="text-[--font-button]" />
+                  <span>Code</span>
+                </a>
+
+                {/* Visit Button */}
+                <a
+                  href="https://clouds-weather-ten.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center bg-[var(--bg-button)] py-1 px-2 rounded-md"
+                >
+                  <span>Visit</span>
+                  <span className="material-symbols-outlined rounded-md">
+                    link
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Card Container */}
+          <div className="p-5 flex flex-col gap-4 border-1 border-[var(--border-color)] rounded-md  bg-[var(--bg-primary)]">
+            {/* image */}
+            <div>
+              <img
+                className=" w-full object-contain"
+                src={webGuard}
+                alt="weather-page"
+              />
+            </div>
+
+            <div className="space-y-4">
+              {/* Title and Description */}
+              <div className="space-y-2">
+                <h1 className="text-[var(--font-primary)] text-xl font-bold md:text-2xl">
+                  Web Guard
+                </h1>
+                <p className="text-[var(--font-secondary)]">
+                  This is a responsive website landing page promoting a modern
+                  website monitoring service with a focus on customizable
+                  dashboards, dark mode, and social proof.
+                </p>
+                {/* TechStack */}
+                <div className="font-bold text-[var(--font-primary)] flex flex-wrap gap-3 ">
+                  <p>Tailwind</p>
+                  <p>React</p>
+                  <p>Node</p>
+                  <p>Express JS</p>
+                  <p>API</p>
+                </div>
+              </div>
+
+              {/* button */}
+              <div className="flex flex-row gap-2 text-[var(--font-button)] ">
+                {/* Code Button */}
+                <a
+                  href="https://github.com/vigiperez24"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center bg-[var(--bg-button)] py-1 px-2 rounded-md"
+                >
+                  <GithubIcon className="text-[--font-button]" />
+                  <span>Code</span>
+                </a>
+
+                {/* Visit Button */}
+                <a
+                  href="https://clouds-weather-ten.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center bg-[var(--bg-button)] py-1 px-2 rounded-md"
+                >
+                  <span>Visit</span>
+                  <span className="material-symbols-outlined rounded-md">
+                    link
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Project;
