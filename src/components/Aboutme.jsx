@@ -6,12 +6,12 @@ function Aboutme() {
   return (
     <div
       id="about"
-      className="w-full min-h-[100vh] py-10 md:py-0 bg-[var(--bg-secondary)] flex justify-center items-center  "
+      className="w-full min-h-[100vh] scroll-p-16 md:py-0 bg-[var(--bg-secondary)] flex justify-center items-center  "
     >
       <div className="max-w-screen-xl  mx-auto ">
         <div className="   flex flex-col justify-center md:flex-row ">
           <div className="md:hidden text-center mb-5">
-            <p className="text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl">
+            <p className="text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl font-bold">
               About
             </p>
           </div>
@@ -31,7 +31,7 @@ function Aboutme() {
           </div>
 
           <div className=" text-center md:text-left flex flex-col justify-start p-5 md:p-0 gap-5">
-            <p className="hidden md:flex text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl">
+            <p className="hidden md:flex text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl font-bold">
               About
             </p>
             <p className="responsive-text  text-[var(--font-secondary)] tracking-tight">
@@ -56,8 +56,8 @@ function Aboutme() {
           </div>
         </div>
         {/* Technologies */}
-        <div className="px-5 space-y-5">
-          <h1 className="text-center md:text-left text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl">
+        <div className="px-5 space-y-5 mt-5">
+          <h1 className="text-center md:text-left text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl font-bold">
             Technologies I Use
           </h1>
 

@@ -69,10 +69,10 @@ function Project() {
     <div className="w-full min-h-screen bg-[var(--bg-secondary)] flex justify-center items-center py-16 px-4">
       <div className="max-w-screen-xl mx-auto w-full space-y-10">
         <div className="text-center space-y-4">
-          <h1 className="text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h1 className="text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl text-center font-bold">
             Featured Projects
           </h1>
-          <p className="text-[var(--font-secondary)] text-base md:text-lg max-w-3xl mx-auto mb-5">
+          <p className="text-[var(--font-secondary)] text-base md:text-lg max-w-3xl mx-auto mb-5 ">
             These are some of the projects I've completed, showcasing my skills
             in various technologies and my ability to solve different problems
           </p>
@@ -125,7 +125,7 @@ function Project() {
                     className="flex-1 flex items-center justify-center gap-2 bg-[var(--bg-button)] text-[var(--font-button)] py-2 px-3 rounded-md hover:opacity-90 transition-opacity"
                   >
                     <LinkIcon />
-                    <span>Code</span>
+                    <span>Visit</span>
                   </a>
                 </div>
               </div>

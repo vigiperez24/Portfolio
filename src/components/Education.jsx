@@ -38,10 +38,10 @@ function Education() {
   console.log(education);
 
   return (
-    <div className="w-full min-h-[100vh] p-5 md:p-5 bg-[var(--bg-primary)] flex flex-col justify-center items-center ">
+    <div className="w-full min-h-[90vh] p-5 md:p-5 bg-[var(--bg-primary)] flex flex-col justify-center items-center ">
       {/* Title inside container */}
       <div className="max-w-screen-xl w-full mx-auto  space-y-10 ">
-        <h1 className="text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl text-center ">
+        <h1 className="text-[var(--font-primary)] text-3xl md:text-4xl lg:text-5xl text-center  font-bold">
           Education
         </h1>
         {/* Full-width background section */}

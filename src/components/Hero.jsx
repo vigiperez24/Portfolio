@@ -3,9 +3,15 @@ import { ThemeContext } from "./ThemeContext";
 import LogoDark from "../assets/logo/dark_mode.png";
 import LogoLight from "../assets/logo/light_mode.png";
 import Ecllipse from "../assets/radialEffects/Ellipse.png";
+import { useScroll } from "./ScrollContext";
 
 function Hero() {
   const { theme } = useContext(ThemeContext);
+  const { scrollToSection } = useScroll();
+  const handleNavClick = (id) => {
+    scrollToSection(id);
+    setIsOpen(false);
+  };
 
   const isLight = theme === "light";
   return (
@@ -27,12 +33,28 @@ function Hero() {
           </div>
 
           <div className="space-x-4">
-            <button className="bg-[var(--btn-color)] text-[var(--bg-primary)] px-4 py-2 tracking-tight text-sm md:text-xl   font-medium cursor-pointer rounded-full hover:bg-[var(--bg-hover]) hover:bg-[var(--font-secondary)]">
-              Contact me
-            </button>
-            <button className="text-[var(--btn-color)] bg-[var(--bg-primary)] border-b- px-4 py-2 text-sm md:text-lg tracking-tight text-m font-medium cursor-pointer rounded-full border-[0.25px] ">
-              View My Work
-            </button>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("contact");
+              }}
+            >
+              <button className="bg-[var(--btn-color)] text-[var(--bg-primary)] px-4 py-2 tracking-tight text-sm md:text-xl   font-medium cursor-pointer rounded-full hover:bg-[var(--bg-hover]) hover:bg-[var(--font-secondary)]">
+                Contact me
+              </button>
+            </a>
+            <a
+              href="#projects"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("projects");
+              }}
+            >
+              <button className="text-[var(--btn-color)] bg-[var(--bg-primary)] border-b- px-4 py-2 text-sm md:text-lg tracking-tight text-m font-medium cursor-pointer rounded-full border-[0.25px] ">
+                View My Project
+              </button>
+            </a>
           </div>
         </div>
         {/* Logo */}

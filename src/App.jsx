@@ -4,8 +4,11 @@ import Hero from "./components/Hero";
 import Aboutme from "./components/Aboutme";
 import Education from "./components/Education";
 import Project from "./components/Project";
+import Contactme from "./components/Contactme";
 import { ThemeProvider } from "./components/ThemeContext";
 import { ScrollProvider } from "./components/ScrollContext";
+import "./components/effectsComponents/fontAwesome";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,7 +33,10 @@ function App() {
             <Project />
           </section>
 
-          <section id="contact">{/* Your Contact component here */}</section>
+          <section id="contact">
+            <Contactme />
+            <Footer />
+          </section>
         </div>
       </ThemeProvider>
     </ScrollProvider>
