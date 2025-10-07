@@ -112,7 +112,7 @@ function Contactme() {
 
   return (
     <div
-      className="w-full relative min-h-screen flex justify-center items-start py-16 px-5"
+      className="w-full relative flex justify-center items-start py-16 px-5"
       style={{ backgroundColor: "var(--bg-primary)" }}
     >
       <div className="max-w-screen-xl w-full">
@@ -292,11 +292,10 @@ function Contactme() {
           </div>
         </div>
       </div>
-
       {/* ✅ Toast Notification */}
       {toastVisible && (
-        <div className="fixed top-20 right-5 z-50 animate-fade-in-up">
-          <div className="flex items-center gap-3 bg-green-500 text-white shadow-lg rounded-xl px-5 py-3 border border-green-600 transition-all">
+        <div className="fixed top-20 right-5 z-50 animate-slide-in-right transition-all duration-500">
+          <div className="flex items-center gap-3 bg-green-500 text-white shadow-lg rounded-xl px-5 py-3 border border-green-600">
             <span className="material-symbols-outlined text-white text-xl">
               check_circle
             </span>
