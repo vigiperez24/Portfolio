@@ -41,7 +41,7 @@ function Project() {
     {
       title: "Clouds - Real Time Weather App", // Project title
       description:
-        "This is a fully responsive and visually polished weather application...", // Project description
+        "This is a fully responsive and visually polished weather application designed to deliver accurate, real-time weather information for any location worldwide. Built using React, Tailwind CSS, and other modern tools, the app integrates with WeatherAPI.com to fetch dynamic weather data and present it in a clean, user-friendly interface.", // Project description
       image: weather, // Project image
       techStack: ["Tailwind", "React", "Node", "Express JS", "API"], // Technologies used
       codeUrl: "https://github.com/vigiperez24", // GitHub link
@@ -50,7 +50,7 @@ function Project() {
     {
       title: "The Best Foods",
       description:
-        "Best Eats is a vibrant and user-friendly food delivery website...",
+        "Best Eats is a vibrant and user-friendly food delivery website that highlights top-rated menu items, promotional offers, and new restaurant listings through a clean layout, intuitive filters, and engaging visuals designed to enhance customer experience and drive orders.",
       image: burger,
       techStack: ["Tailwind", "React", "JavaScript", "JSON"],
       codeUrl: "https://github.com/vigiperez24",
@@ -59,7 +59,7 @@ function Project() {
     {
       title: "Web Guard",
       description:
-        "This is a responsive website landing page promoting a modern website monitoring service...",
+        "This is a responsive website landing page promoting a modern website monitoring service with a focus on customizable dashboards, dark mode, and social proof.",
       image: webGuard,
       techStack: ["HTML", "CSS", "JavaScript"],
       codeUrl: "https://github.com/vigiperez24",
