@@ -6,7 +6,7 @@ function Aboutme() {
   return (
     <div
       id="about"
-      className="w-full min-h-[100vh] scroll-p-16 md:py-0 bg-[var(--bg-secondary)] flex justify-center items-center  "
+      className="w-full min-h-[100vh]  py-15 bg-[var(--bg-secondary)] flex justify-center items-center  "
     >
       <div className="max-w-screen-xl  mx-auto ">
         <div className="   flex flex-col justify-center md:flex-row ">
