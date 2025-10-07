@@ -229,7 +229,7 @@ function Contactme() {
                     className="text-sm font-medium"
                     style={{ color: "var(--font-primary)" }}
                   >
-                    Your Gmail
+                    Your Email
                   </p>
                   <input
                     className="w-full p-2 font-medium border rounded placeholder:text-sm"
