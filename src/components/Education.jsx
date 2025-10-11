@@ -119,7 +119,7 @@ function Education() {
                   >
                     date_range
                   </span>
-                  <p>2020-2024</p>{" "}
+                  <p>{educ.yearStart}-{educ.yearEnd}</p>
                   {/* ⚠️ Hardcoded date, consider using educ.yearStart and educ.yearEnd */}
                 </div>
                 {/* Graduation status */}
