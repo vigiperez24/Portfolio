@@ -119,8 +119,10 @@ function Education() {
                   >
                     date_range
                   </span>
-                  <p>{educ.yearStart}-{educ.yearEnd}</p>
-                  {/* ⚠️ Hardcoded date, consider using educ.yearStart and educ.yearEnd */}
+                  <p>
+                    {educ.yearStart}-{educ.yearEnd}
+                  </p>
+                  {/*  Hardcoded date, consider using educ.yearStart and educ.yearEnd */}
                 </div>
                 {/* Graduation status */}
                 <h1 className="font-vold text-[var(--font-secondary)] text-sm  md:text-md">

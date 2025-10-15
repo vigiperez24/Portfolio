@@ -65,7 +65,7 @@ function Contactme() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // ✅ Gmail validation
+    //  Gmail validation
     if (!formData.email.endsWith("@gmail.com")) {
       alert("Please use a valid Gmail address (e.g., example@gmail.com)");
       return;
@@ -102,7 +102,7 @@ function Contactme() {
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  // ✅ Auto-hide toast after 3s
+  //  Auto-hide toast after 3s
   useEffect(() => {
     if (toastVisible) {
       const timer = setTimeout(() => setToastVisible(false), 3000);
@@ -173,7 +173,7 @@ function Contactme() {
             >
               <FacebookIcon />
               <span className="tracking-tight">
-                https://www.facebook.com/vigipogi
+                https://www.facebook.com/vigiperez
               </span>
             </a>
 
@@ -292,7 +292,7 @@ function Contactme() {
           </div>
         </div>
       </div>
-      {/* ✅ Toast Notification */}
+      {/*  Toast Notification */}
       {toastVisible && (
         <div className="fixed top-20 right-5 z-50 animate-slide-in-right transition-all duration-500">
           <div className="flex items-center gap-3 bg-green-500 text-white shadow-lg rounded-xl px-5 py-3 border border-green-600">
