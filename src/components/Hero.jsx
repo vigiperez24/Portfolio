@@ -13,7 +13,7 @@ function Hero() {
   // Handles navigation click and closes menu (setIsOpen is undefined here, might be leftover)
   const handleNavClick = (id) => {
     scrollToSection(id);
-    setIsOpen(false); // ⚠️ Note: setIsOpen is not defined in this component
+    setIsOpen(false); //  Note: setIsOpen is not defined in this component
   };
 
   const isLight = theme === "light"; // Boolean to check if current theme is light
@@ -31,14 +31,15 @@ function Hero() {
             </h1>
             {/* Subtitle */}
             <p className="font-medium text-3xl text-[var(--font-secondary)]">
-              Aspiring Web developer
+              Aspiring Web developer / IT support
             </p>
             {/* Description */}
             <p className="text-[var(--font-secondary)]">
-              I build responsive, user-friendly, and visually engaging websites
-              using modern technologies and best practices to deliver seamless
-              digital experiences. lore{" "}
-              {/* ⚠️ Consider removing "lore" if it's a placeholder */}
+              I create responsive, user-friendly, and visually polished websites
+              using modern technologies—and offer hands-on IT support to
+              troubleshoot issues, optimize performance, and deliver seamless
+              digital experiences.
+              {/*  Consider removing "lore" if it's a placeholder */}
             </p>
           </div>
 

@@ -53,10 +53,12 @@ function Aboutme() {
 
             {/* Introduction paragraph */}
             <p className="responsive-text text-[var(--font-secondary)] tracking-tight">
-              Hi, I'm Vigi S. Perez, 24 years old and an aspiring web developer
-              from the Philippines. I enjoy creating responsive and
-              user-friendly websites, and I’m always eager to learn new
-              frameworks and tools to improve my skills.
+              Hi, I'm Vigi S. Perez, 24 years old and an aspiring Web Developer
+              and IT Support Specialist from the Philippines. I enjoy creating
+              responsive, user-friendly websites and providing technical support
+              that helps users solve problems efficiently. I'm always eager to
+              learn new frameworks, tools, and troubleshooting techniques to
+              improve my skills.
             </p>
 
             {/* Background and interests paragraph */}
